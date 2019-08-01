@@ -1,10 +1,12 @@
 <template>
 	<div>
+		<NavBar></NavBar>
 		<Tabbar></Tabbar>
 	</div>
 </template>
 
 <script>
+	import NavBar from '@/components/Public/NavBar'
 	import Tabbar from '@/components/Public/Tabbar'
 	export default {
 		data () {
@@ -13,11 +15,12 @@
 			}
 		},
 		components:{
+			NavBar: NavBar,
 			Tabbar: Tabbar
 		}
 	}
 </script>
 
-<style>
+<style scoped>
 	
 </style>

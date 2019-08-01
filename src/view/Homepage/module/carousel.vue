@@ -3,17 +3,16 @@
 		<van-swipe
 			@change="onChange"
 			:autoplay="3000"
-			:loop="true"
-			class='carousel'>
-			<van-swipe-item v-for='(img,index) in images' :key="index">
+			:loop="true">
+			<van-swipe-item
+				v-for='(img,index) in images'
+				:key="index">
 				<van-image
-					fit="contain"
+					fit="fill"
 					:src="img.imgUrl"
+					width='100%'
 				/>
 			</van-swipe-item>
-			<div class="custom-indicator" slot="indicator">
-				{{ current + 1 }}/4
-			</div>
 		</van-swipe>
 	</div>
 </template>
@@ -48,10 +47,5 @@
 </script>
 
 <style scoped>
-	.custom-indicator{
-		position: absolute;
-		right: .5rem;
-		bottom: .5rem;
-		color: #fff;
-	}
+
 </style>

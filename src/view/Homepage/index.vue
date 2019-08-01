@@ -2,7 +2,6 @@
 	<div>
 		<NavBar></NavBar>
 		<carousel></carousel>
-		<sort></sort>
 		<list></list>
 		<Tabbar></Tabbar>
 	</div>
@@ -10,9 +9,8 @@
 
 <script>
 	import NavBar from '@/components/Public/NavBar'
-	import carousel from '@/components/Homepage/module/carousel'
-	import sort from '@/components/Homepage/module/sort'
-	import list from '@/components/Homepage/module/list'
+	import carousel from '@/view/Homepage/module/carousel'
+	import list from '@/view/Homepage/module/list'
 	import Tabbar from '@/components/Public/Tabbar'
 	export default {
 		data () {
@@ -23,7 +21,6 @@
 		components:{
 			NavBar: NavBar,
 			carousel: carousel,
-			sort: sort,
 			list: list,
 			Tabbar: Tabbar
 		}

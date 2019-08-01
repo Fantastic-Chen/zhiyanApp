@@ -1,8 +1,9 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Homepage from '@/components/Homepage/index'
-import Message from '@/components/Message/index'
-import Personal from '@/components/Personal/index'
+import Homepage from '@/view/Homepage/index'
+import Sort from '@/view/Sort/index'
+import Message from '@/view/Message/index'
+import Personal from '@/view/Personal/index'
 
 Vue.use(Router)
 
@@ -12,6 +13,11 @@ export default new Router({
       path: '/',
       name: 'Homepage',
       component: Homepage
+    },
+    {
+      path: '/Sort',
+      name: 'Sort',
+      component: Sort
     },
     {
       path: '/Message',

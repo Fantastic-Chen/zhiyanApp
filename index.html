@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1, user-scalable=no">
+    <meta name="viewport" viewport-fit=cover content="width=device-width,initial-scale=1.0,maximum-scale=1, user-scalable=no">
     <link rel="icon" href="static/44741535.jpg" type="image/x-icon" />
  	<link rel="shortcut icon" href="static/44741535.jpg" type="image/x-icon" />
     <title>之言</title>
@@ -13,21 +13,21 @@
   </body>
   <script>
   	// 移动端适配
-	var rootResize=function(){
-		var baseFontSize = 2;//设置rem与px的比例 目前设置为2的时候 rem：px 为 1：1
-		var baseWidth = 750;
-		var minWidth=320;
-		var clientWidth = document.documentElement.clientWidth || window.innerWidth;
-		var innerWidth = Math.max(Math.min(clientWidth, baseWidth), minWidth);
-		var rem = clientWidth/(baseWidth/baseFontSize);
-		if(innerWidth==750||innerWidth==320){
-		   rem=innerWidth/(baseWidth/baseFontSize)
-		} 
-		document.querySelector('html').style.fontSize = rem + 'px';
-	};
-	rootResize();
-	window.onresize=function(){
-		rootResize();
-	}
+	// var rootResize=function(){
+	// 	var baseFontSize = 50;//设置rem与px的比例 目前设置为2的时候 rem：px 为 1：1
+	// 	var baseWidth = 750;
+	// 	var minWidth=320;
+	// 	var clientWidth = document.documentElement.clientWidth || window.innerWidth;
+	// 	var innerWidth = Math.max(Math.min(clientWidth, baseWidth), minWidth);
+	// 	var rem = clientWidth/(baseWidth/baseFontSize);
+	// 	if(innerWidth==750||innerWidth==320){
+	// 	   rem=innerWidth/(baseWidth/baseFontSize)
+	// 	} 
+	// 	document.querySelector('html').style.fontSize = rem + 'px';
+	// };
+	// rootResize();
+	// window.onresize=function(){
+	// 	rootResize();
+	// }
   </script>
 </html>
