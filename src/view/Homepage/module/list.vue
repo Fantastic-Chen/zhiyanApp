@@ -20,7 +20,8 @@
 					<van-cell
 						v-for="(item,index) in listOne"
 						:key="index"
-						:title="item.title"/>
+						:title="item.title">
+					</van-cell>
 				</van-list>
 			</van-tab>
 			<van-tab title="关注" name="Attention">
@@ -97,7 +98,8 @@
 					},{
 						title:'1230'
 					},{
-						title:'12311231231'
+						title:'12311231231',
+						url:'/Sort'
 					},{
 						title:'123'
 					},{

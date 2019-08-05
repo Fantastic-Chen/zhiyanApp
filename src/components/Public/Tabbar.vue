@@ -1,5 +1,5 @@
 <template>
-	<div>
+	<div class="tabbar">
 		<van-tabbar v-model="active"
 					route
 					fixed

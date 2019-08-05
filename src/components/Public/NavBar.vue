@@ -1,5 +1,5 @@
 <template>
-	<div>
+	<div class="navbar">
 		<form action="/">
 			<van-search
 			  v-model="value"
